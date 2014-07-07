@@ -1,8 +1,8 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="jobs">
     <xs:complexType>
-      <xs:sequence maxOccurs="unbounded">
-        <xs:element name="job">
+      <xs:sequence>
+        <xs:element name="job" maxOccurs="unbounded">
           <xs:complexType>
             <xs:all>
               <xs:element type="xs:string" name="id"/>
