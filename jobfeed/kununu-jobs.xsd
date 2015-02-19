@@ -14,6 +14,7 @@
               <xs:element type="xs:string" name="plaintext"/>
               <xs:element type="xs:string" name="content"/>
               <xs:element type="xs:string" name="css" minOccurs="0"/>
+              <xs:element type="xs:string" name="url" minOccurs="0"/>
             </xs:all>
           </xs:complexType>
         </xs:element>
