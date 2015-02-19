@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jobs> <job>
-    <id><![CDATA[eindeutige Referenz Nummer (numerisch + alphanumerische Zeichen
-möglich)]]></id>
-    <title><![CDATA[Job Titel / Bezeichnung]]></title>
-    <location><![CDATA[Stadt oder Ort oder Region]]></location>
-    <country><![CDATA[Länderkürzel (DE, AT, CH)]]></country>
-    <company><![CDATA[Firmenname der zum Inserat angezeigt werden
-soll]]></company>
-    <employment><![CDATA[Anstellungsart *optional* (Vollzeit, Teilzeit,
-Praktikum)]]></employment>
-    <plaintext><![CDATA[Kurztext ohne HTML-Formatierung der
-Inseratvorschau]]></plaintext>
+<jobs>
+  <id>1</id>
+  <title>Senior Software Engineer</title>
+  <location>Wien</location>
+  <country>AT</country>
+  <company>kununu GmbH</company>
+  <plaintext>
+    In deiner Position als Senior Software Engineer bist du maßgeblich an der
+    Umsetzung der Website beteiligt.
+  </plaintext>
+  <content>
+    <![CDATA[
+    <h3>Ihr Profil</h3>
+    <ul>
+      <li>Hochschulabschluss</li>
+      <li>Querdenker</li>
+    </ul>
+    <h3>Ihre Aufgaben</h3>
+    <ul>
+      <li>Programmieren</li>
+      <li>Datenbankdesign</li>
+    </ul>
+    ]]>
+    </content>
+    <employment>Vollzeit</employment>
+  </job>
 
-    <content><![CDATA[
-        Der Inhalt Ihres Stelleninserates
-        • als HTML
-        • Elemente aus kununu-externen Quellen bitte mit absoluter Verlinkung
-          deklarieren. (z.B. img src="http://www.homepage.com/images/bild.jpg")
-    ]]></content>
-
-    <css><![CDATA[Gegebenenfalls Pfad zu Ihrer individuellen CSS-
-Datei]]></css>
-</job>
-<job> ... </job>
+  <job>
+    <id>2</id>
+    <title>Junior Job Crawler</title>
+    <location>Wien</location>
+    <country>AT</country>
+    <company>kununu GmbH</company>
+    <plaintext>
+      Du
+    </plaintext>
+    <employment>Teilzeit</employment>
+    <url>http://www.kununu.com/kununu/jobs/junior-job-crawler</url>
+  </job>
 </jobs>
