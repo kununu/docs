@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jobs>
-  <id>1</id>
-  <title>Senior Software Engineer</title>
-  <location>Wien</location>
-  <country>AT</country>
-  <company>kununu GmbH</company>
-  <plaintext>
-    In deiner Position als Senior Software Engineer bist du maßgeblich an der
-    Umsetzung der Website beteiligt.
-  </plaintext>
-  <content>
-    <![CDATA[
-    <h3>Ihr Profil</h3>
-    <ul>
-      <li>Hochschulabschluss</li>
-      <li>Querdenker</li>
-    </ul>
-    <h3>Ihre Aufgaben</h3>
-    <ul>
-      <li>Programmieren</li>
-      <li>Datenbankdesign</li>
-    </ul>
-    ]]>
-    </content>
+  <job>
+    <id>1</id>
+    <title>Senior Software Engineer</title>
+    <location>Wien</location>
+    <country>AT</country>
+    <company>kununu GmbH</company>
+    <plaintext>
+      In deiner Position als Senior Software Engineer bist du maßgeblich an der
+      Umsetzung der Website beteiligt.
+    </plaintext>
+    <content><![CDATA[
+      <h3>Ihr Profil</h3>
+      <ul>
+        <li>Hochschulabschluss</li>
+        <li>Querdenker</li>
+      </ul>
+      <h3>Ihre Aufgaben</h3>
+      <ul>
+        <li>Programmieren</li>
+        <li>Datenbankdesign</li>
+      </ul>
+    ]]></content>
     <employment>Vollzeit</employment>
   </job>
 
