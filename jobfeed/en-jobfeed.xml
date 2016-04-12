@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs>
+  <job>
+    <id>1</id>
+    <title>Senior Software Engineer</title>
+    <location>Boston</location>
+    <country>US</country>
+    <company>kununu US</company>
+    <plaintext>
+      Your Tasks will have a huge inpact on www.kununu.com. 
+    </plaintext>
+    <content><![CDATA[
+      <h3>Your Profile</h3>
+      <ul>
+        <li>Collagedegree</li>
+        <li>maverick</li>
+      </ul>
+      <h3>Your Tasks</h3>
+      <ul>
+        <li>Programming</li>
+        <li>Database design</li>
+      </ul>
+    ]]></content>
+    <employment>Full Time</employment>
+  </job>
+
+  <job>
+    <id>2</id>
+    <title>Junior Job Crawler</title>
+    <location>Boston</location>
+    <country>US</country>
+    <company>kununu US</company>
+    <plaintext>
+      You love crawling the web? You speak php fluently? 
+    </plaintext>
+    <content></content>
+    <employment>Part Time</employment>
+    <url>https://www.kununu.com/us/kununu/jobs/junior-job-crawler</url>
+  </job>
+</jobs>
