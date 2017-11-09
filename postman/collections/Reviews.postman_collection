@@ -1,0 +1,136 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Reviews",
+		"_postman_id": "2e7e4219-bd31-fa34-5625-25ac16d65d62",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"url": "{{baseurl}}/reviews-service",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\":\"employer\",\"type_version\":\"v1_us\",\"company_id\":206136,\"user_id\":38894,\"title\":\"testing Give your review a title in 10 words or less\\n\",\"source\":\"public-api\",\"country_code\":\"us\",\"answers\":[{\"question_id\":29,\"rating\":0,\"options\":[47]},{\"question_id\":34,\"rating\":4,\"answer\":\"text\"},{\"question_id\":35,\"rating\":4,\"answer\":\"answer\"},{\"question_id\":38,\"rating\":2,\"answer\":\"text\"},{\"question_id\":43,\"rating\":5,\"answer\":\"text\"},{\"question_id\":47,\"rating\":3,\"answer\":\"text\"},{\"question_id\":51,\"rating\":5,\"answer\":\"text\"},{\"question_id\":36,\"rating\":5,\"answer\":\"text\"},{\"question_id\":37,\"rating\":5,\"answer\":\"text\"},{\"question_id\":39,\"rating\":5,\"answer\":\"text\"},{\"question_id\":48,\"rating\":3,\"answer\":\"text\"},{\"question_id\":49,\"rating\":3,\"answer\":\"text\"},{\"question_id\":50,\"rating\":3,\"answer\":\"text\"},{\"question_id\":40,\"rating\":4,\"answer\":\"text\"},{\"question_id\":41,\"rating\":4,\"answer\":\"text\"},{\"question_id\":42,\"rating\":2,\"answer\":\"text\"},{\"question_id\":44,\"rating\":2,\"answer\":\"text\"},{\"question_id\":45,\"rating\":2,\"answer\":\"text\"},{\"question_id\":46,\"rating\":2, \"answer\": \"\"},{\"question_id\":52,\"answer\":\"What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?What are your suggestions for improvement?\",\"rating\":0},{\"question_id\":53,\"answer\":\"What do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you likeWhat do you like stop\",\"rating\":0},{\"question_id\":54,\"answer\":\"What do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislikeWhat do you dislike stop\",\"rating\":0},{\"question_id\":55,\"rating\":0,\"options\":[70]}]}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"url": "{{baseurl}}/reviews-service/Ug==",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\": \"apprenticeship\",\n\t\"type_version\": \"v1_dach\",\n\t\"company_id\": 9876,\n\t\"user_id\": 38894,\n\t\"title\": \"a super review\",\n\t\"source\": \"some_cooperation\",\n\t\"country_code\": \"AT\",\n\t\"answers\": [\n\t\t{\n\t\t\t\"question_id\": 109,\n\t\t\t\"rating\": 5,\n\t\t\t\"answer\": \"supervisor\"\n\t\t},\n\t\t{\n\t\t\t\"question_id\": 103,\n\t\t\t\"options\": [187]\n\t\t},\n\t\t{\n\t\t\t\"question_id\": 122,\n\t\t\t\"options\": [233]\n\t\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"url": "{{baseurl}}/reviews-service/UVA=",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"review_id\": 1,\n\t\"type\": \"employer\",\n\t\"type_version\": \"v1_dach\",\n\t\"company_id\": 9876,\n\t\"user_id\": 1234,\n\t\"title\": \"a super review Take TWO\",\n\t\"source\": \"some_cooperation\",\n\t\"rating\": 4.00,\n\t\"answers\": [{\n\t\t\"question_id\": 1,\n        \"options\": \"blub\"\n\t},\n\t{\n\t\t\"question_id\": 2\n\t},\n\t{\n        \"question_id\": 3,\n        \"rating\": 5\n    },\n    {\n        \"question_id\": 4,\n        \"rating\": 3,\n        \"answer\": \"This is a rating comment\"\n    },\n\t{\n        \"question_id\": 5,\n        \"rating\": 5\n    }]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/metadata",
+			"request": {
+				"url": "{{baseurl_reviews}}/reviews/metadata/employer/v1_dach",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"review_id\": 1,\n\t\"type\": \"employer\",\n\t\"type_version\": \"v1_dach\",\n\t\"company_id\": 9876,\n\t\"user_id\": 1234,\n\t\"title\": \"a super review Take TWO\",\n\t\"source\": \"some_cooperation\",\n\t\"rating\": 4.00,\n\t\"answers\": [{\n\t\t\"question_id\": 1,\n        \"options\": \"blub\"\n\t},\n\t{\n\t\t\"question_id\": 2\n\t},\n\t{\n        \"question_id\": 3,\n        \"rating\": 5\n    },\n    {\n        \"question_id\": 4,\n        \"rating\": 3,\n        \"answer\": \"This is a rating comment\"\n    },\n\t{\n        \"question_id\": 5,\n        \"rating\": 5\n    }]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"url": "{{baseurl}}/reviews-service/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"review_id\": 1,\n\t\"type\": \"employer\",\n\t\"type_version\": \"v1_dach\",\n\t\"company_id\": 9876,\n\t\"user_id\": 1234,\n\t\"title\": \"a super review Take TWO\",\n\t\"source\": \"some_cooperation\",\n\t\"rating\": 4.00,\n\t\"answers\": [{\n\t\t\"question_id\": 1,\n        \"options\": \"blub\"\n\t},\n\t{\n\t\t\"question_id\": 2\n\t},\n\t{\n        \"question_id\": 3,\n        \"rating\": 5\n    },\n    {\n        \"question_id\": 4,\n        \"rating\": 3,\n        \"answer\": \"This is a rating comment\"\n    },\n\t{\n        \"question_id\": 5,\n        \"rating\": 5\n    }]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

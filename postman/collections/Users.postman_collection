@@ -1,0 +1,281 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Users",
+		"_postman_id": "8728b480-ecaa-fc5f-600b-cc49b55d7a24",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"description": "",
+			"item": [
+				{
+					"name": "Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData[\"access_token\"]);"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "{{baseurl_users}}/access-token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"grant_type\":\"password\",\n\t\"scope\":\"ROLE_MEMBER\",\n\t\"username\":\"{{user}}\",\n\t\"password\":\"{{password}}\",\n\t\"client_id\": \"dev\",\n\t\"client_secret\": \"dev3000\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Access Token - OTP",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData[\"access_token\"]);"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "{{baseurl_users}}/access-token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"grant_type\":\"otp\",\n\"scope\":\"ROLE_ADMIN_US\",\n\"username\":\"{{user}}\",\n\"password\":\"{{password}}\",\n\"otp\": \"111222\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Access Token - Xing OAuth",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData[\"access_token\"]);"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "{{baseurl}}/access-token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"grant_type\":\"xing_oauth\",\n\"scope\":\"ROLE_MEMBER\",\n\"oauth_token\":\"74002fafc6588ae143c3\",\n\"oauth_token_secret\":\"8262f42e32d221b2ecd4\",\n\"client_id\": \"dev\",\n\"client_secret\": \"dev3000\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Access Token - Activation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData[\"access_token\"]);"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "{{baseurl}}/access-token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"grant_type\":\"activation\",\n\"scope\":\"ROLE_MEMBER\",\n\"username\":\"michal.kristin@kununu.com\",\n\"activation_code\":\"ea35350c80b1c50071546fec3535a721041ca84b\",\n\"client_id\": \"dev\",\n\"client_secret\": \"dev3000\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData[\"access_token\"]);"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "{{baseurl}}/access-token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"grant_type\":\"refresh_token\",\n\t\"scope\":\"ROLE_MEMBER\",\n\t\"refresh_token\":\"def502002bebcc5a7175667b12544ee2cd1889c915ce6b7ac2be82ff1cf4e49af2350380517a546162876035adcde049e3f6bda1437ef87045acf2dccddf8e9cb9e070912a3758703604d7b9bee419169be42330196048a341c8805e2556da1b25054ab8610ef0c0a6fb16e335fbf2cd005851623db7ed9dc2cbe8c515d1065e59816a8666c09cbafcce83fee0557d9ac9273bf876a27e11fd38026b7aed8b9d427b49b09a11402cd73ffeecdbdbc1ff4ff4f70081ab8e76c073219bf23a39a19625db5f1a8cfbbe434ffff8b062c9798eebb658af3961aa2baa74919ab686f24e42845233efc95d5aec5f28e469edc33833dca89da21a22beea9883423d4fb323dd99628c45178caab069ea82a657017e5430509d74a34fc04d4702b5550ca824a7233cbe7081a55246c7b0bc35c002edf68da2eb6fd55590dab79a92206598a8282202e0605574af42c417630a9edadbd8b13517999510e654eab764b168a5087e1922c8f6c2e7eac2112eb9296fa7eeb8ae3d\",\n\t\"client_id\": \"dev\",\n\t\"client_secret\": \"dev3000\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROD",
+			"description": "",
+			"item": [
+				{
+					"name": "Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData[\"access_token\"]);"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://api.kununu.com/v1/access-token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"grant_type\":\"password\",\n\"scope\":\"ROLE_MEMBER\",\n\"username\":\"{{user}}\",\n\"password\":\"{{password}}\",\n\"client_id\": \"dev\",\n\"client_secret\": \"dev3000\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users.create",
+			"request": {
+				"url": "http://users.kununu.dev/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"michal+5@kununu.com\",\n\t\"ip\": \"127.0.0.1\",\n\t\"country_code\": \"at\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/companies/merge_requests",
+			"request": {
+				"url": "http://companies.kununu.dev/companies/merge_requests",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"master_company_id\" : 328691,\n    \"merge_company_ids\" : [309510]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
