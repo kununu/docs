@@ -1,0 +1,79 @@
+{
+	"variables": [],
+	"info": {
+		"name": "detectify ",
+		"_postman_id": "9350bb7b-ec12-f0ee-40e3-79143b76141e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Main Information",
+			"request": {
+				"url": "https://api.detectify.com/rest/v1/user/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User Information",
+			"request": {
+				"url": "https://api.detectify.com/rest/v1/user/{{user_token}}/get",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Domains",
+			"request": {
+				"url": "https://api.detectify.com/rest/v1/domain/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get logs for domain",
+			"request": {
+				"url": "https://api.detectify.com/rest/v1/domain/{{domain_token}}/getlogs",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "getlogs"
+			},
+			"response": []
+		}
+	]
+}
